@@ -1,20 +1,26 @@
+
 import javax.swing.*;
 import java.awt.*;
-public class Login extends JFrame 
-{
-Login()
-{
-getContentPane().setBackground(Color.WHITE); //colour of bottom frame
-ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("C:\Users\Dell\Desktop\quizapplication\quizz\start_login.jpeg"));
-JLabel image=new JLabel(i1);
-add(i1);
+//import java.awt.event.*;
 
-setSize(1200,500);  //increasing size of frame
-setLocation(200,150);  //setting location on the center
-setVisible(true);  //frame to be visible bydefault hidden
+public class Login extends JFrame {
+
+    //JButton rules, back;
+    //JTextField tfname;
+
+    Login() {
+        getContentPane().setBackground(Color.WHITE);
+       
+
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("quizz/start_login.jpeg"));
+        JLabel image = new JLabel(i1);  
+       add(image);
+         //setLayout(null);
+        setSize(1200, 500);
+        setLocation(200, 150);
+        setVisible(true);
 }
-public static void main(String args[])
-{
-new Login();
-}
+    public static void main(String[] args) {
+        new Login();
+    }
 }
